@@ -1,21 +1,14 @@
-import './App.css';
-import React, { Component } from "react";
-import EmployeeTable from "./components/TableHeader/TableHeader";
-import employees from "./employees.json";
+import React from "react";
+import EmployeeTable from "./components/EmployeeTable/EmployeeTable"
+import data from "./data/employees.json";
 
-class App extends Component {
-  //Setting the State
-  state = {
-    employees
-  };
-  render() {
-    return (
-      <div>
-        <EmployeeTable />
-      </div>
-    )
-  }
-  
+function App() {
+  return (
+    <div>
+    <h1> Hello World! </h1>
+    <EmployeeTable data={data} />;
+    </div>
+    
+  )
 }
-
 export default App;
