@@ -8,9 +8,15 @@ function EmployeeTable(props) {
                 <th scope="col"><button
                 type="button"
                 onClick={() => props.sortName()}>Name:</button></th>
-                <th scope="col"><button>Occupation:</button></th>
-                <th scope="col"><button>Location:</button></th>
-                <th scope="col"><button>Email Address:</button></th>
+                <th scope="col"><button
+                type="button"
+                onClick={() => props.sortOccupation()}>Occupation:</button></th>
+                <th scope="col"><button
+                type="button"
+                onClick={() => props.sortLocation()}>Location:</button></th>
+                <th scope="col"><button
+                type="button"
+                onClick={() => props.sortEmail()}>Email Address:</button></th>
             </tr>
         </thead>
         <tbody>
