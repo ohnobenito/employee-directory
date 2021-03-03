@@ -8,9 +8,21 @@ class App extends Component {
     data
   };
   
-  //Sort Function
+  //Sort Functions
   sortName = () => {
     let data = this.state.data.sort((a, b) => (a.name > b.name) ? 1 : -1)
+    this.setState({data});
+  };
+  sortOccupation = () => {
+    let data = this.state.data.sort((a, b) => (a.occupation > b.occupation) ? 1 : -1)
+    this.setState({data});
+  };
+  sortLocation = () => {
+    let data = this.state.data.sort((a, b) => (a.location > b.location) ? 1 : -1)
+    this.setState({data});
+  };
+  sortEmail = () => {
+    let data = this.state.data.sort((a, b) => (a.email > b.email) ? 1 : -1)
     this.setState({data});
   };
 
@@ -20,7 +32,10 @@ class App extends Component {
       <h1> Hello World! </h1>
       <EmployeeTable 
       data={data}
-      sortName={this.sortName}/>
+      sortName={this.sortName}
+      sortOccupation={this.sortOccupation}
+      sortLocation={this.sortLocation}
+      sortEmail={this.sortEmail}/>
       </div>
       
     )
