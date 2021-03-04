@@ -1,16 +1,23 @@
 import React, { Component } from "react";
-import EmployeeTable from "./components/EmployeeTable/EmployeeTable"
-//import Table from "./components/TestTable";
 import data from "./data/employees.json";
+import EmployeeTable from "./components/EmployeeTable/EmployeeTable";
+import InputField from "./components/InputField/InputField";
+
 
 class App extends Component {
   state = {
-    data
+    data,
+    occupation: "",
+    original: data
   };
   
   //Sort Functions
-  sortName = () => {
-    let data = this.state.data.sort((a, b) => (a.name > b.name) ? 1 : -1)
+  sortFirstName = () => {
+    let data = this.state.data.sort((a, b) => (a.firstName > b.firstName) ? 1 : -1)
+    this.setState({data});
+  };
+  sortLastName = () => {
+    let data = this.state.data.sort((a, b) => (a.lastName > b.lastName) ? 1 : -1)
     this.setState({data});
   };
   sortOccupation = () => {
@@ -21,21 +28,20 @@ class App extends Component {
     let data = this.state.data.sort((a, b) => (a.location > b.location) ? 1 : -1)
     this.setState({data});
   };
-  sortEmail = () => {
-    let data = this.state.data.sort((a, b) => (a.email > b.email) ? 1 : -1)
-    this.setState({data});
-  };
+  
 
   render() {
     return (
       <div>
       <h1> Hello World! </h1>
+      <InputField />
       <EmployeeTable 
       data={data}
-      sortName={this.sortName}
+      sortFirstName={this.sortFirstName}
+      sortLastName={this.sortLastName}
       sortOccupation={this.sortOccupation}
       sortLocation={this.sortLocation}
-      sortEmail={this.sortEmail}/>
+      />
       </div>
       
     )
