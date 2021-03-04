@@ -7,25 +7,27 @@ function EmployeeTable(props) {
             <tr>
                 <th scope="col"><button
                 type="button"
-                onClick={() => props.sortName()}>Name:</button></th>
+                onClick={() => props.sortFirstName()}>First Name:</button></th>
+                <th scope="col"><button
+                type="button"
+                onClick={() => props.sortLastName()}>Last:</button></th>
                 <th scope="col"><button
                 type="button"
                 onClick={() => props.sortOccupation()}>Occupation:</button></th>
                 <th scope="col"><button
                 type="button"
                 onClick={() => props.sortLocation()}>Location:</button></th>
-                <th scope="col"><button
-                type="button"
-                onClick={() => props.sortEmail()}>Email Address:</button></th>
+                
             </tr>
         </thead>
         <tbody>
             {props.data.map(info => (
             <tr>
-            <td>{info.name}</td>
+            <td>{info.firstName}</td>
+            <td>{info.lastName}</td>
             <td>{info.occupation}</td>
             <td>{info.location}</td>
-            <td>{info.email}</td>
+            
         </tr>
             ))}
             
