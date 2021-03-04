@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import employees from "./data/employees.json";
 import NavBar from "./components/NavBar/NavBar"
-//import EmployeeTable from "./components/EmployeeTable/EmployeeTable";
 import TableHeader from "./components/TableHeader/TableHeader";
 import TableBody from "./components/TableBody/TableBody";
 
@@ -52,21 +51,27 @@ class App extends Component {
       <NavBar 
       location={this.state.location}
       handleInputChange={this.handleInputChange} />
-      <table className="table table-sm table-striped">
-      <TableHeader 
-      employee={employees}
-      sortID={this.sortID}
-      sortFirstName={this.sortFirstName}
-      sortLastName={this.sortLastName}
-      sortOccupation={this.sortOccupation}
-      sortLocation={this.sortLocation}/>
-      <tbody>
-        {this.state.employees.map((employee) => (
-          <TableBody employee={employee} />
-        ))}
-      </tbody>
-      </table>
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+          <table className="table table-sm table-striped table-bordered">
+          <TableHeader 
+            employee={employees}
+            sortID={this.sortID}
+            sortFirstName={this.sortFirstName}
+            sortLastName={this.sortLastName}
+            sortOccupation={this.sortOccupation}
+            sortLocation={this.sortLocation}/>
+          <tbody>
+            {this.state.employees.map((employee) => (
+            <TableBody employee={employee} />
+            ))}
+          </tbody>
+          </table>
+          </div>
+        </div>
       </div>
+    </div>
       
     )
   }

@@ -8,7 +8,6 @@ This employee directory is an application that allows the user to load a random 
 ![Badge:](https://img.shields.io/badge/License-mit-brightgreen)
 
 ![**Screenshot of Application:**](./public/ss1.png)
-![](./public/ss2.png)
 
 
 ## Table of Contents
