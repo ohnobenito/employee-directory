@@ -1,7 +1,7 @@
 # **Employee Directory**
 
 ## Description
-An application that allows the user to load a random list of employees and allows the user to sort and filter the list
+This employee directory is an application that allows the user to load a random list of data that is able to be sort the data fields alphabetically by a simple push of a button! Search field will filter results down for easier access to information as needed.
 
 **Links to [GitHub Repo](https://github.com/ohnobenito/employee-directory) and [Deployed Page](https://ohnobenito.github.io/employee-directory/)**
 
@@ -15,7 +15,7 @@ An application that allows the user to load a random list of employees and allow
 [1. Description](#Description)<br>
 [2. License](License)<br>
 [3. Contributing](#Contributing)<br>
-[4. Tests](#Tests)<br>
+[4. Future Developments](#Future)<br>
 [5. Authors](#Authors)<br>
 [6. Questions](#Questions)<br>
 
@@ -26,8 +26,8 @@ This application is covered by the MIT license. Full documentation can be found 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## Tests
-Please make sure to update tests as appropriate.
+## Future Developments
+Future Developments for this application will incorporate a random employee generator API with more data fields that can be sorted.
 
 ## Authors
 This application was created by Benito Gonzalez.
