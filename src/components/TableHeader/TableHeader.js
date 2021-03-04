@@ -1,8 +1,6 @@
 import React from "react";
 
 function TableHeader(props) {
-    let employee = props.employee;
-
     return (
         <thead>
             <tr>

@@ -2,8 +2,8 @@ import React from "react";
 
 function EmployeeTable(props) {
     return (
-    <table class="table">
-        <thead class="thead-dark">
+    <table className="table">
+        <thead className="thead-dark">
             <tr>
                 <th scope="col"><button
                 type="button"
@@ -21,9 +21,9 @@ function EmployeeTable(props) {
             </tr>
         </thead>
         <tbody>
-            {props.data.map(info => (
+            {props.employees.map(info => (
             <tr>
-            <td>{info.firstName}</td>
+            <td >{info.firstName}</td>
             <td>{info.lastName}</td>
             <td>{info.occupation}</td>
             <td>{info.location}</td>
