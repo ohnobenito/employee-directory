@@ -1,7 +1,7 @@
 # **Employee Directory**
 
 ## Description
-This employee directory is an application that allows the user to load a random list of data that is able to be sort the data fields alphabetically by a simple push of a button! Search field will filter results down for easier access to information as needed.
+This employee directory is an application that allows the user to load a random list of data that is able to be sorted alphabetically by a simple push of a button! Search field will filter results down for easier access to information as needed.
 
 **Links to [GitHub Repo](https://github.com/ohnobenito/employee-directory) and [Deployed Page](https://ohnobenito.github.io/employee-directory/)**
 
